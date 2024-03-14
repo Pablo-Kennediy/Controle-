@@ -13,71 +13,98 @@
     <header>
         <img src="" alt="">
         <aside>
-            <li>Dashboard</li>
-            <li>Estoque</li>
-            <li>Registro de ponto</li>
+            <a href="#Estoque"><li>Estoque</li></a>
+<a href="#registroponto"><li>Registro de ponto</li></a>
         </aside>
     </header>
- <div class="interface">
-    <div class="flex">
-        <main>
-         <h1>
-             Painel de Controle
-         </h1>
-         <section class="dashboard">
-             <ul>
-                 <li>Estoque</li>
-                 <li>Registro de ponto</li>
-                 <li>Mais funções</li>
-             </ul>
-         </section>
-         <section class="estoque">
-             <div class="flex">
-                 <div>
-                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum magni sint aperiam, iste eius atque
-                         voluptates veritatis autem hic rem culpa maxime beatae eos ut consequuntur placeat sed commodi
-                         iusto!</p>
-                     <p>Dignissimos recusandae earum numquam sint, ipsa, fuga voluptatibus eligendi perferendis minus odio
-                         dolorem temporibus quod et mollitia harum provident? Nisi a, quas cumque aut voluptatem dignissimos
-                         impedit. Voluptate, repellendus impedit.</p>
-                     <p>Corporis deleniti esse sapiente voluptatem inventore qui. Beatae, quisquam animi! Magnam placeat,
-                         dolorum quae repudiandae repellat dolor ipsa, necessitatibus quasi sed repellendus facere
-                         perferendis impedit ea debitis molestiae delectus natus.</p>
-                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore quo earum sequi vero nihil
-                         sapiente error? Doloremque numquam totam debitis itaque, vel iure, cumque corporis expedita quidem,
-                         autem a praesentium.</p>
-                     <p>Quaerat asperiores animi eius dolore quasi nam possimus facere sed, neque repellendus consequatur
-                         sint tenetur enim minus magnam porro eveniet quisquam sequi eaque, optio accusantium architecto.
-                         Veniam ab praesentium perferendis!</p>
-                     <p>Numquam, voluptatem magnam itaque autem sint illum quidem ab iure tempore explicabo culpa. Neque sint
-                         officia repellat fugit voluptatum aperiam quam aspernatur repudiandae illum? Dolorum quibusdam
-                         quidem sint labore officia!</p>
-                 </div>
-             </div>
-         </section>
-         <section class="registroponto">
-             <div class="flex">
-                 <h1>Registro de Ponto</h1>
-                 <div>
-                     <p>Suporte</p>
-                     <p>Sair</p>
-                 </div>
-                 <div>
-     <img src="" alt="">                
-     <form action="login.php" method="post">
-         <label for="id_usuario">ID do Usuário:</label>
-         <input type="text" id="id_usuario" name="id_usuario" required>
-         <label for="senha">Senha:</label>
-         <input type="password" id="senha" name="senha" required>
-         <input type="submit" value="Entrar">
-       </form>
-                 </div>
-             </div>
-         </section>
-         <section class="maisfuncao"></section>
-     </main>
- </div>
- </div>
+    <div class="interface">
+        <div class="flex">
+            <main>
+                <h1>
+                    Painel de Controle
+                </h1>
+                <section id="registroponto" class="registroponto">
+                    <h1>Registro de Ponto</h1>
+                    <div class="flex">
+                                              <div>
+                            <img src="" alt="">
+                            <form action="login.php" method="post">
+                                <label for="id_usuario">ID do Usuário:</label>
+                                <input type="text" id="id_usuario" name="id_usuario" required>
+                                <label for="senha">Senha:</label>
+                                <input type="password" id="senha" name="senha" required>
+                                <input type="submit" value="Entrar">
+                            </form>
+                        </div>
+                                           </div>
+                                                <p>Suporte</p>
+                            <p>Sair</p>
+                </section>
+                <section id="Estoque" class="estoque">
+                    <h1>Lista de Materiais para Construção Civil</h1>
+                    <div class="flex">
+                        <div>
+                            <ul>
+                                <h2>Agregado</h2>
+                                <ul>
+                                    <li>Areia</li>
+                                    <li>Pedra britada</li>
+                                </ul>
+                                <h2>Aglomerante</h2>
+                                <ul>
+                                    <li>Cimento</li>
+                                    <li>Cal</li>
+                                </ul>
+                                <h2>Metais</h2>
+                                <ul>
+                                    <li>Aço</li>
+                                    <li>Ferro</li>
+                                </ul>
+                                <h2>Madeira</h2>
+                                <ul>
+                                    <li>Serrada</li>
+                                    <li>Compensada</li>
+                                </ul>
+                                <h2>Cobertura</h2>
+                                <ul>
+                                    <li>Telhas</li>
+                                    <li>Calhas e rufos</li>
+                                </ul>
+                                <h2>Revestimento</h2>
+                                <ul>
+                                    <li>Tintas</li>
+                                    <li>Pisos e azulejos</li>
+                                </ul>
+                                <h2>Hidráulica</h2>
+                                <ul>
+                                    <li>Tubos e conexões</li>
+                                    <li>Louças e metais</li>
+                                </ul>
+                                <h2>Isolante</h2>
+                                <ul>
+                                    <li>Térmico</li>
+                                    <li>Acústico</li>
+                                </ul>
+                                <h2>Vedação</h2>
+                                <ul>
+                                    <li>Argamassa</li>
+                                    <li>Selante</li>
+                                </ul>
+                                <h2>Equipamentos de Proteção Individual (EPIs)</h2>
+                                <ul>
+                                    <li>Capacete</li>
+                                    <li>Óculos</li>
+                                    <li>Luvas</li>
+                                    <li>Botas</li>
+                                </ul>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <section class="maisfuncao"></section>
+            </main>
+        </div>
+    </div>
 </body>
 
 </html>
