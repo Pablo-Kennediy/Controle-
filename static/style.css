@@ -27,9 +27,6 @@ header,
 footer {
     text-align: center;
 }
-section{
-height: 100vh;
-}
 
 #funcionalidades ul {
     columns: 2;
@@ -116,12 +113,6 @@ aside li {
     margin-top: 20%;
 }
 
-.interface,
-main {
-    float: right;
-    width: 80%;
-}
 video{
-    float: right;
     width: 50%;
 }
