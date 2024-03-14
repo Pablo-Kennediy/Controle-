@@ -10,7 +10,8 @@ h3 {
 h2 {
     color: #FB3D00;
 }
-header{
+
+header {
     position: fixed;
     width: 100%;
 }
@@ -24,7 +25,7 @@ footer {
     columns: 2;
 }
 
-ul li {
+li {
     list-style: none;
 }
 
@@ -38,61 +39,79 @@ ul li {
         display: block;
     }
 }
-.flex{
+
+.flex {
     display: flex;
 
 }
+
 body {
     font-family: sans-serif;
     margin: 20px;
-  }
-  
-  .container {
+}
+
+.container {
     margin: auto;
     width: 400px;
     border: 1px solid #ccc;
     padding: 20px;
     border-radius: 10px;
-  }
-  
-  h1 {
+}
+
+h1 {
     text-align: center;
-  }
-  
-  form {
+}
+
+form {
     margin-top: 20px;
-  }
-  
-  label {
+}
+
+label {
     display: block;
     margin-bottom: 5px;
-  }
-  
-  input {
+}
+
+input {
     width: 100%;
     padding: 5px;
     border: 1px solid #ccc;
     border-radius: 5px;
-  }
-  
-  input[type="submit"] {
+}
+
+input[type="submit"] {
     margin-top: 10px;
     cursor: pointer;
     background-color: #000;
     color: #fff;
     border: none;
     border-radius: 5px;
-  }
-  
-  .links {
+}
+
+.links {
     margin-top: 10px;
     text-align: center;
-  }
-  
-  a {
+}
+
+a {
     text-decoration: none;
     color: #000;
-  }
-  .estoque{
+}
+
+.estoque {
     columns: 2;
-  }
+}
+
+aside {
+    width: 30vh;
+    height: 100%;
+}
+
+aside li {
+    margin-top: 20%;
+}
+
+.interface,
+main {
+    float: right;
+    width: 80%;
+}
