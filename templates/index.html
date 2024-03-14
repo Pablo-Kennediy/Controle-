@@ -12,19 +12,23 @@
 <body>
     <header>
         <h1>Controle de Ponto e Estoque</h1>
-    </header>
-    <main>
-        <section id="introducao">
-                <video id="lg" src="../static/CONTROLE +.mp4" muted loop autoplay></video>
-               <div>
+        <div class="flex">
+            <video id="lg" src="../static/CONTROLE +.mp4" muted loop autoplay></video>
+            <section id="introducao">
                 <h2>Diga adeus às planilhas complicadas e ao controle de ponto manual!</h2>
                 <p>Com o nosso aplicativo, você gerencia a jornada de trabalho dos seus colaboradores e o estoque da sua
                     empresa com praticidade e eficiência.</p>
-               </div>
-        </section>
+            </section>
+        </div>
+        <form action="submit.html" method="post">
+            <input type="submit" name="cadastrar" value="Cadastrar">
+            <input type="submit" name="logar" value="Entrar">
+        </form>
+    </header>
+    <main>
         <section id="funcionalidades">
             <h3>Funcionalidades básicas:</h3>
-            <li>**Registro de Ponto:**</li>
+            <h1>**Registro de Ponto:**</h1>
             <ul>
                 <li>Marcações via celular: Entrada, saída, intervalos e horas extras, tudo com registro de
                     geolocalização.</li>
@@ -32,7 +36,7 @@
                 <li>Acompanhamento em tempo real: Monitore a jornada de trabalho da sua equipe em tempo real.</li>
                 <li>Relatórios completos: Analise e exporte relatórios detalhados da jornada de trabalho.</li>
             </ul>
-            <li>**Controle de Estoque:**</li>
+            <h1>**Controle de Estoque:**</h1>
             <ul>
                 <li>Cadastro de produtos: Inclua fotos, descrições, categorias e preços.</li>
                 <li>Movimentação do estoque: Registre entradas, saídas e transferências de produtos.</li>
@@ -40,15 +44,14 @@
                 <li>Relatórios de estoque: Acompanhe o nível de estoque e identifique produtos com baixa rotatividade.
                 </li>
             </ul>
-            <li>**Outras funcionalidades:**</li>
-            <ul>
-                <li>Cadastro de funcionários: Mantenha os dados dos seus colaboradores atualizados.</li>
-                <li>Gestão de escalas: Crie e gerencie escalas de trabalho de forma rápida e fácil.</li>
-                <li>Cálculo automático de horas: O aplicativo calcula automaticamente as horas trabalhadas, extras e
-                    saldo de horas.</li>
-                <li>Comunicação interna: Envie comunicados e avisos para seus colaboradores.</li>
-                <li>Integração com folha de pagamento: Exporte os dados de ponto para a folha de pagamento.</li>
-            </ul>
+            <h1>**Outras funcionalidades:**</h1>
+
+            <li>Cadastro de funcionários: Mantenha os dados dos seus colaboradores atualizados.</li>
+            <li>Gestão de escalas: Crie e gerencie escalas de trabalho de forma rápida e fácil.</li>
+            <li>Cálculo automático de horas: O aplicativo calcula automaticamente as horas trabalhadas, extras e saldo
+                de horas.</li>
+            <li>Comunicação interna: Envie comunicados e avisos para seus colaboradores.</li>
+            <li>Integração com folha de pagamento: Exporte os dados de ponto para a folha de pagamento.</li>
         </section>
         <section id="beneficios">
             <h3>Benefícios:</h3>
