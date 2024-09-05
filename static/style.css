@@ -14,12 +14,14 @@ h2 {
 aside {
     position: fixed;
 }
-#formindex{
+
+#formindex {
     display: flex;
     margin: auto;
     max-width: 100px;
 }
-#formindex input{
+
+#formindex input {
     margin: 15px;
 }
 
@@ -104,6 +106,7 @@ a {
 }
 
 aside {
+    right: 0;
     width: 30vh;
     height: 100%;
 }
@@ -112,10 +115,38 @@ aside li {
     margin-top: 20%;
 }
 
-video{
+video {
     width: 50%;
 }
+
 button {
+    display: block;
+    margin: auto;
+    background-color: #FB3D00;
+    color: white;
+    box-shadow: 150px, 15px, 10px;
     margin: 15px;
     padding: 15px;
+    border-radius: 15px;
+}
+
+td {
+    border-radius: 15px;
+    padding: 3px;
+    margin: auto;
+    border: 3px solid black;
+}
+
+.maisfuncao li {
+    display: inline-block;
+    list-style: none;
+    padding: 15px;
+}
+
+.notasFiscais li {
+    border: 1px solid #FB3D00;
+    border-radius: 15px;
+}
+footer{
+    border-top: #FB3D00 2px solid;
 }

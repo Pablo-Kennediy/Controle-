@@ -4,47 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="../static/CONTROLE +.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../static/iconeContratante.png" type="image/x-icon">
     <title>Controle de Ponto e Estoque</title>
     <link rel="stylesheet" href="../static/style.css">
 </head>
 
 <body>
     <header>
-        <img src="" alt="">
-        <aside>
-            <a href="#Estoque"><li>Estoque</li></a>
-<a href="#registroponto"><li>Registro de ponto</li></a>
-        </aside>
+        <h1>
+            Painel de Controle
+        </h1>
     </header>
     <div class="interface">
         <div class="flex">
             <main>
-                <h1>
-                    Painel de Controle
-                </h1>
-                <section id="registroponto" class="registroponto">
-                    <h1>Registro de Ponto</h1>
-                    <div class="flex">
-                                              <div>
-                            <img src="" alt="">
-                            <form action="login.php" method="post">
-                                <label for="id_usuario">ID do Usuário:</label>
-                                <input type="text" id="id_usuario" name="id_usuario" required>
-                                <label for="senha">Senha:</label>
-                                <input type="password" id="senha" name="senha" required>
-                                <input type="submit" value="Entrar">
-                            </form>
-                        </div>
-                                           </div>
-                                                <p>Suporte</p>
-                            <p>Sair</p>
-                </section>
                 <section id="Estoque" class="estoque">
                     <h1>Lista de Materiais para Construção Civil</h1>
                     <div class="flex">
-                        <div>
-                            <ul>
+                        <!-- <div>
+                         <ul>
                                 <h2>Agregado</h2>
                                 <ul>
                                     <li>Areia</li>
@@ -98,13 +76,137 @@
                                     <li>Botas</li>
                                 </ul>
                             </ul>
-                        </div>
+                        </div>  -->
+                        <table id="myTable">
+                            <tr>
+                                <th>Categoria</th>
+                                <th>Materiais</th>
+                                <th>Quatidades</th>
+                                <th>Validade</th>
+                            </tr>
+                            <tr>
+                                <td>Agregado</td>
+                                <td>Areia, Pedra britada</td>
+                                <td>0.0</td>
+                                <td>00/00/0000</td>
+                            </tr>
+                            <tr>
+                                <td>Aglomerante</td>
+                                <td>Cimento, Cal</td>
+                                <td>0.0</td>
+                                <td>00/00/0000</td>
+                            </tr>
+                            <tr>
+                                <td>Metais</td>
+                                <td>Aço, Ferro</td>
+                                <td>0.0</td>
+                                <td>00/00/0000</td>
+                            </tr>
+                            <tr>
+                                <td>Madeira</td>
+                                <td>Serrada, Compensada</td>
+                                <td>0.0</td>
+                                <td>00/00/0000</td>
+                            </tr>
+                            <tr>
+                                <td>Cobertura</td>
+                                <td>Telhas, Calhas e rufos</td>
+                                <td>0.0</td>
+                                <td>00/00/0000</td>
+                            </tr>
+                            <tr>
+                                <td>Revestimento</td>
+                                <td>Tintas, Pisos e azulejos</td>
+                                <td>0.0</td>
+                                <td>00/00/0000</td>
+                            </tr>
+                            <tr>
+                                <td>Hidráulica</td>
+                                <td>Tubos e conexões, Louças e metais</td>
+                                <td>0.0</td>
+                                <td>00/00/0000</td>
+                            </tr>
+                            <tr>
+                                <td>Isolante</td>
+                                <td>Térmico, Acústico</td>
+                                <td>0.0</td>
+                                <td>00/00/0000</td>
+                            </tr>
+                            <tr>
+                                <td>Vedação</td>
+                                <td>Argamassa, Selante</td>
+                                <td>0.0</td>
+                                <td>00/00/0000</td>
+                            </tr>
+                            <tr>
+                                <td>Equipamentos de Proteção Individual (EPIs)</td>
+                                <td>Capacete, Óculos, Luvas, Botas</td>
+                                <td>0.0</td>
+                                <td>00/00/0000</td>
+                            </tr>
+                        </table>
+                                             <script>
+                            // JavaScript para manipular a tabela
+                            function addRow() {
+                                let table = document.getElementById("myTable");
+                                let row = table.insertRow();
+                                let cell1 = row.insertCell(0);
+                                let cell2 = row.insertCell(0);
+                                let cell3 = row.insertCell(0);
+                                let cell4 = row.insertCell(1);
+
+
+                                cell1.contentEditable = "true";
+                                cell2.contentEditable = "true";
+                                cell3.contentEditable = "true";
+                                cell4.contentEditable = "true";
+
+                            }
+
+                            function deleteRow() {
+                                let table = document.getElementById("myTable");
+                                table.deleteRow(table.rows.length - 1);
+                            }
+                        </script>
                     </div>
+                    <div class="flex">
+                        <button onclick="addRow()">Adicionar Linha</button>
+                        <button onclick="deleteRow()">Remover Última Linha</button>
+                     </div>
                 </section>
-                <section class="maisfuncao"></section>
+               
+                <section class="maisfuncao">
+                    <li>
+                        <a href="registroDePronto.html">
+                            Resgistro de ponto
+                        </a>
+                    </li>
+                    <li>
+                        <a href="suporte.html">
+                            Suporte
+                        </a>
+                    </li>
+                    <li>
+                        <a href="config.html">
+                            Configurações
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../index.html">
+                            Sair
+                        </a>
+                    </li>
+                </section>
             </main>
         </div>
     </div>
+    <footer>
+        <p>
+            <a href="https://pablo-kennediy.github.io/curriculo/">infoprodutos.org</a> &copy; 2024 | Todos os
+            direitos
+            reservados
+        </p>
+    </footer>
 </body>
 
 </html>
