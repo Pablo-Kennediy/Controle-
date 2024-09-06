@@ -5,22 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../static/iconeContratante.png" type="image/x-icon">
-    <title>Controle de Ponto e Estoque</title>
+    <title>Painel de controle</title>
     <link rel="stylesheet" href="../static/style.css">
 </head>
 
 <body>
     <header>
-        <h1>
-            Painel de Controle
-        </h1>
+        <h1>Lista de Materiais</h1>
+        <h2>
+
+        </h2>
     </header>
     <div class="interface">
         <div class="flex">
             <main>
                 <section id="Estoque" class="estoque">
-                    <h1>Lista de Materiais para Construção Civil</h1>
-                    <div class="flex">
+
                         <!-- <div>
                          <ul>
                                 <h2>Agregado</h2>
@@ -167,31 +167,71 @@
                                 let table = document.getElementById("myTable");
                                 table.deleteRow(table.rows.length - 1);
                             }
+                            // Imprimir a pagina
+                            function printPage() {
+                                window.print();
+                            }
                         </script>
-                    </div>
+               
                     <div class="flex">
-                        <button onclick="addRow()">Adicionar Linha</button>
-                        <button onclick="deleteRow()">Remover Última Linha</button>
+                        <div class="APIs" id="WORD">
+                            <a href="https://docs.google.com/document/d/1st55n8pZaKva58Vkumr1nu8XnJ_lWBXDu1xYACj5SdY/edit?usp=sharing"
+                                target="_blank">
+                                <button>
+                                    Word
+                                </button>
+                            </a>
+                        </div>
+                        <div class="APIs" id="EXCEL">
+                            <a href="https://docs.google.com/spreadsheets/d/178MaqGJhoQdhr7rdN1evhYZqg6jemVrty4nEjJ89034/edit?usp=sharing"
+                                target="_blank">
+                                <button>
+                                    Excel
+                                </button>
+                            </a>
+                        </div>
+                        <div class="APIs" id="FORMULARIO">
+                            <a href="form.html" target="_blank">
+                                <button>
+                                    Formulario
+                                </button>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="">
+                                <button onclick="addRow()">Adicionar Linha</button>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="">
+                                <button onclick="deleteRow()">Remover Última Linha</button>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="">
+                                <button onclick="printPage()">Imprimir</button>
+                            </a>
+                        </div>
                     </div>
                 </section>
                 <section class="maisfuncao">
                     <li>
-                        <a href="registroDePronto.html">
+                        <a href="registroDePronto.html" target="_blank">
                             Resgistro de ponto
                         </a>
                     </li>
                     <li>
-                        <a href="painel de controle.html">
+                        <a href="painel de controle.html" target="_blank">
                             Painel de Controle
                         </a>
                     </li>
                     <li>
-                        <a href="suporte.html">
+                        <a href="suporte.html" target="_blank">
                             Suporte
                         </a>
                     </li>
                     <li>
-                        <a href="config.html">
+                        <a href="config.html" target="_blank">
                             Configurações
                         </a>
                     </li>
